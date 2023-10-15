@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        padding: 0 5rem;
+    }
+}
+li{
+    list-style: none;
+}
+.row > *,ul,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+h5{
+    word-spacing: .8px;
+    line-height: 1.7rem;
+}
+/* _____________ */
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/david-clode-oJlt2XBWuWs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0 6rem 0;
+}
+header #text-container{
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgb(21, 78, 250);
+}
+header #text-container ul{
+    width: 40vw;
+}
+@media screen and (max-width: 990px) {
+    header #text-container ul{
+        width: 90%;
+    }
+}
+.check-i{
+    font-size: 2.5rem;
+}
+.slider .row .imgS{
+    width: 90%;
+    height: 30rem;
+}
+@media screen and (max-width: 750px) {
+    .slider .row .imgS{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+.slider .row .imgS img{
+    width: 100%;
+}
+.resize-btn{
+    width: 15rem;
+    display: inline-block;
+}
+.learn .row img  , .passion .row img{
+    width: 30rem;
+    height:30rem;
+    object-fit: cover;
+}
+@media screen and (max-width: 500px) {
+    .learn .row img  , .passion .row img{
+        width: 20rem;
+        height:20rem;
+    }
+}
